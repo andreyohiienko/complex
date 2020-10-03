@@ -6,12 +6,12 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 
 const app = express()
-app.use(corst())
+app.use(cors())
 app.use(bodyParser.json())
 
 // Postgress client setup
 const { Pool } = require('pg')
-const pbClient = new Pool({
+const pgClient = new Pool({
   user: keys.pgUser,
   host: keys.pgHost,
   database: keys.pgDatabase,
@@ -28,7 +28,7 @@ pgClient
 // Redis Client Setup
 const redis = require('redis')
 
-const redisClient = redisClient({
+const redisClient = redis.createClient({
   host: keys.redisHost,
   port: keys.redisPort,
   retry_strategy: () => 1000,
