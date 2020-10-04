@@ -20,7 +20,9 @@ class Fib extends Component {
 
   async fetchIndexes() {
     const seenIndexes = await axios.get('/api/values/all')
-    this.setState({ seenIndexes: seenIndexes.data })
+    this.setState({
+      seenIndexes: seenIndexes.data,
+    })
   }
 
   handleSubmit = async (event) => {
@@ -33,13 +35,13 @@ class Fib extends Component {
   }
 
   renderSeenIndexes() {
-    return this.state.seenIndexes.map(({ number }) => number.join(', '))
+    return this.state.seenIndexes.map(({ number }) => number).join(', ')
   }
 
   renderValues() {
     const entries = []
 
-    for (const key in this.state.values) {
+    for (let key in this.state.values) {
       entries.push(
         <div key={key}>
           For index {key} I calculated {this.state.values[key]}
@@ -64,7 +66,7 @@ class Fib extends Component {
         <h3>Indexes I have seen:</h3>
         {this.renderSeenIndexes()}
 
-        <h3>Calculated values:</h3>
+        <h3>Calculated Values:</h3>
         {this.renderValues()}
       </div>
     )
