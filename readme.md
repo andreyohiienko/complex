@@ -10,5 +10,9 @@ Store inputs in posgreSQL database.
 - Docker
 - Docker-compose
 
+## Commands
+- docker-compose up --build
+- docker-compose down
+
 ## Issues
 - Hide environment variables in 'docker-compose.yml'
