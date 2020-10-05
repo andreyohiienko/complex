@@ -18,6 +18,19 @@
       "image": "andreyohiienko/multi-worker",
       "hostname": "worker",
       "essential": false
+    },
+    {
+      "name": "nginx",
+      "image": "andreyohiienko/multi-nginx",
+      "hostname": "nginx",
+      "essential": true,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80
+        }
+      ],
+      "links": ["client", "server"]
     }
   ]
 }

@@ -18,5 +18,8 @@ Store inputs in posgreSQL database.
 - docker-compose up --build
 - docker-compose down
 
+## Tips
+- At least one container should be marked as "essential": "true" 
+
 ## Issues
 - Hide environment variables in 'docker-compose.yml'
