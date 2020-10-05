@@ -14,6 +14,10 @@ Store inputs in posgreSQL database.
 - Elastic Beanstalk
 - Elastic Container Service
 
+### Managed data service providers (Recomended)
+- AWS Elastic Cache (Redis)
+- AWS Relational Database service (Postgres)
+
 ## Commands
 - docker-compose up --build
 - docker-compose down
