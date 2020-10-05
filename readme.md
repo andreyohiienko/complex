@@ -16,7 +16,7 @@ Store inputs in posgreSQL database.
 - Virtual Private Cloud
 
 ### Managed data service providers (Recomended)
-- AWS Elastic Cache (Redis)
+- AWS Elasti Cache (Redis)
 - AWS Relational Database service (Postgres)
 
 ## Commands
