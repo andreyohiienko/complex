@@ -22,7 +22,8 @@ after_success:
 - docker push andreyohiienko/multi-worker
 
 deploy:
-  provider: elastickbeanstalk
+  edge: true
+  provider: elasticbeanstalk
   region: us-east-2
   app: complex
   env: Complex-env
