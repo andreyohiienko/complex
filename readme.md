@@ -12,6 +12,7 @@ Store inputs in posgreSQL database.
 - Docker-compose
 - Travis CI
 - Elastic Beanstalk
+- Elastic Container Service
 
 ## Commands
 - docker-compose up --build
