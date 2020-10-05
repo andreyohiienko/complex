@@ -10,6 +10,8 @@ Store inputs in posgreSQL database.
 - Postgres
 - Docker
 - Docker-compose
+- Travis CI
+- Elastic Beanstalk
 
 ## Commands
 - docker-compose up --build
