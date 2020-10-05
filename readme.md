@@ -1,5 +1,5 @@
 # Fibonacci sequence app
-Multi docker\
+Multi container\
 Calculate fibonacci number by redis based on input index.\
 Store inputs in posgreSQL database.
 
