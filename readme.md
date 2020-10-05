@@ -13,6 +13,7 @@ Store inputs in posgreSQL database.
 - Travis CI
 - Elastic Beanstalk
 - Elastic Container Service
+- Virtual Private Cloud
 
 ### Managed data service providers (Recomended)
 - AWS Elastic Cache (Redis)
