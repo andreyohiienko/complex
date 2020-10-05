@@ -4,7 +4,20 @@
     {
       "name": "client",
       "image": "andreyohiienko/multi-client",
-      "hostname": "client"
+      "hostname": "client",
+      "essential": false
+    },
+    {
+      "name": "server",
+      "image": "andreyohiienko/multi-server",
+      "hostname": "api",
+      "essential": false
+    },
+    {
+      "name": "worker",
+      "image": "andreyohiienko/multi-worker",
+      "hostname": "worker",
+      "essential": false
     }
   ]
 }
